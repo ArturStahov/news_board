@@ -1,0 +1,9 @@
+{{#each this}}
+<div class="col-12 col-md-6 col-lg-4 col-xl-3  news-item" data-fulldesc="{{content}}">
+    <h2 class="news-item_title">{{title}}</h2>
+    <img src="{{urlToImage}}" alt="{{title}}" class="news-item_images">
+
+    <p class="news-item_text">{{description}}</p>
+    <button class="news-item_read-button" data-button-show-content="show">read</button>
+</div>
+{{/each}}

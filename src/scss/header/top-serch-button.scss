@@ -1,0 +1,52 @@
+.top-serch-block {
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: -20px;
+  left: 50%;
+}
+.top-serch_list {
+  display: flex;
+  justify-content: flex-start;
+}
+.top-serch_item {
+  height: 40px;
+  width: 40px;
+  border: 1px solid $second-font-color;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+[data-topserch='house'] {
+  background-image: url(../images/ico/family_ico.png);
+  background-color: $house-color;
+}
+[data-topserch='family'] {
+  background-image: url(../images/ico/house_ico.png);
+  background-color: $family-color;
+}
+
+[data-topserch='travels'] {
+  background-image: url(../images/ico/music_ico.png);
+  background-color: $travels-color;
+}
+
+[data-topserch='music'] {
+  background-image: url(../images/ico/teacher_ico.png);
+  background-color: $music-color;
+}
+
+[data-topserch='learn'] {
+  background-image: url(../images/ico/travel_ico.png);
+  background-color: $learn-color;
+}

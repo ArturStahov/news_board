@@ -1,0 +1,22 @@
+.news-item {
+  // max-width: 380px;
+  padding: 10px 10px 10px 10px;
+}
+
+.news-item_images {
+  margin-bottom: 10px;
+}
+
+.news-item_title {
+  margin-bottom: 15px;
+  @include font-settings(1rem, 1.2, 700, $text-color-item-titile);
+}
+
+.news-item_read-button {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include font-settings(1rem, 1.2, 600, $third-font-color);
+  cursor: pointer;
+}
